@@ -71,7 +71,7 @@ fn main() -> ! {
         const POINTER: usize = 0x08010160;
         let function = core::mem::transmute::<usize, extern "C" fn() -> !>(POINTER);
         
-        cortex_m::register::msp::write(0x00000000);
+        //cortex_m::register::msp::write(0x00000000);
         /*core::ptr::write_volatile(
                 MSP,0x00000000,
             );*/
